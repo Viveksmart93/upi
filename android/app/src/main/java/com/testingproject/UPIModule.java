@@ -24,7 +24,7 @@ private final ActivityEventListener mActivityEventListener = new BaseActivityEve
      String res = data.getStringExtra("response");
      promiseUpi.resolve(res);
     } else {
-     promiseUpi.reject("Failed", data.toString());
+     promiseUpi.reject("Failed", "data.toString()");
     }
    }
   }
